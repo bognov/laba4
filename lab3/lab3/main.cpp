@@ -159,6 +159,7 @@ void List::Show(void)
 	while (r)
 	{
 		r->getinfo();
+		cout << "==========================" << endl;
 		r = r->next;
 	}
 }
