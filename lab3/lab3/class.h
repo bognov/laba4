@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 class vehicle
 { 
 protected:
@@ -95,8 +96,8 @@ public: List()
 	head = 0; 
 }  
 ~List();  
-void Show(void);
+static void Show(void);
 void Insert(vehicle *);
-private:  
-	vehicle *head; 
+public:  
+	static vehicle *head; 
 };  

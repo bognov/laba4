@@ -4,12 +4,6 @@
 
 using namespace std;
 
-void vehicle::setsize(int a, int b, int c)
-{
-	length = a;
-	width = b;
-	hight = c;
-}
 
 void vehicle::setspeed(int a)
 {
@@ -30,8 +24,18 @@ void vehicle::getinfo()
 	cout << weight << endl;
 }
 
+void vehicle::setsize(int a, int b, int c)
+{
+	length = a;
+	width = b;
+	hight = c;
+}
+
+
 /*===========================================================
 =============================================================*/
+
+
 
 void car::setplaces(int a)
 {
@@ -54,6 +58,7 @@ void car::getinfo(engine& m)
 /*===========================================================
 =============================================================*/
 
+
 void train::setwagons(int a)
 {
 	numwagons = a;
@@ -74,6 +79,7 @@ void train::getinfo(wagon& m)
 
 /*==============================================================
 ================================================================*/
+
 
 void express::setplaces(int a)
 {
@@ -144,6 +150,7 @@ List::~List()
 		delete r;
 	}
 }
+
 void List::Insert(vehicle *p)
 {
 
@@ -152,6 +159,7 @@ void List::Insert(vehicle *p)
 	head = p;
 	p->next = r;
 }
+
 void List::Show(void)
 {
 	vehicle *r;

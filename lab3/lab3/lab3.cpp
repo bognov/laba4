@@ -26,6 +26,8 @@ int setsm(int m[2])
 	return *m;
 }
 
+vehicle * List::head = NULL;
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int a[3] , hp, n, m[2], v, w, p, i;
